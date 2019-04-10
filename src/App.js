@@ -25,7 +25,9 @@ class App extends Component {
 
   submit = () => {
     let newTodos = [...this.state.todos]
+    console.log(newTodos)
     newTodos.push(this.state.todo)
+    console.log(newTodos)
     this.setState({
       todos: newTodos,
       todo: ""
@@ -35,6 +37,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state)
     return (
       <div className="App">
         <h1>Todo List</h1>
